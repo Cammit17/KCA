@@ -11,28 +11,42 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo" style="background: url('./icons/logo.svg'); background-position: center; background-repeat: no-repeat;"></div>
     </header>
     <main>
-        <div class="photo-container" style="background: url('./zdjecia/1.jpeg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="photo-container" style="background-image: url('./zdjecia/1.jpeg');">
             <span class="photo-text">Winner of the "We Love to Care" award by Magasin du nord</span>
         </div>
-        <div class="photo-container" style="background: url('./zdjecia/2.png'); background-size: cover; background-repeat: no-repeat;">
-            <span class="photo-text">NATURE</span>
+        <div class="photo-container" style="background-image: url('./zdjecia/2.png');">
+            <span class="photo-text">Nature</span>
         </div>
-        <div class="photo-container" style="background: url('./zdjecia/3.png'); background-size: cover; background-repeat: no-repeat;">
+        <div class="photo-container" style="background-image: url('./zdjecia/3.png');">
             <span class="photo-text">A New World</span>
         </div>
-        <div class="photo-container" style="background: url('./zdjecia/6.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="photo-container" style="background-image: url('./zdjecia/6.jpg');">
             <span class="photo-text">Knowledge is for all</span>
         </div>
     </main>
-    <menu>
-        <div class="menu-item" style="background: url('./icons/domek.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
-        <div class="menu-item" style="background: url('./icons/lupka.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
-        <div class="menu-item" style="background: url('./icons/sowa.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; top: 4px;"><span>menu</span></div>
-        <div class="menu-item" style="background: url('./icons/human.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
-        <div class="menu-item" style="background: url('./icons/koszyk.svg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+    <section class="menu-list">
+        <div class="menu-item" style="background-image: url('./icons/domek.svg');"></div>
+        <div class="menu-item" style="background-image: url('./icons/lupka.svg');"></div>
+        <div class="menu-item menu-opener" style="background-image: url('./icons/sowa.svg'); top: 4px;  height: 90%;"><span>menu</span></div>
+        <div class="menu-item menu-closer"></div>
+        <div class="menu-item" style="background-image: url('./icons/human.svg');"></div>
+        <div class="menu-item" style="background-image: url('./icons/koszyk.svg'); "></div>
+    </section>
+    <menu class="menu-container close">
+        <ul>
+            <li>store</li>
+            <li>videos</li>
+            <li>upcoming events</li>
+            <li>achieving our goals</li>
+            <li>contact</li>
+            <li>place for you</li>
+        </ul>
     </menu>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
