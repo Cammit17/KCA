@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Cotton</title>
+    <link rel="shortcut icon" href="../icons/sowa.svg" type="image/x-icon"> 
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding: 0 5%; */
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+    }
+
+    .product-container{
+        width: 50%;
+        height: auto;
+    }
+
+    .product-img{
+        width: 100%;
+        height: 220px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .product-container>span{
+        display: inline-block;
+        text-align: center;
+        font-size: .7rem;
+        font-weight: bold;
+        padding: 0 1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .open-product-container{
+        min-height: 85vh;
+        background-color: white;
+        margin: 5.5rem 0 3.5rem 0;
+        /* position: fixed; */
+        /* margin-right: 2rem; */
+        /* margin-top: 5.5rem; */
+        /* transform: translateY(100%); */
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .open-product-container>.close-button{
+        width: 100%;
+        background-color: rgba(92, 92, 92, 0.219);
+        height: 3.5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .open-product-container>.close-button::before, .open-product-container>.close-button::after{
+        width: 3.5rem;
+        height: 2px;
+        border-radius: 5px;
+        background-color: black;
+        position: absolute;
+        content: '';
+    }
+    
+    .open-product-container>.close-button::before{
+        transform: rotate(45deg);
+    }
+
+    .open-product-container>.close-button::after{
+        transform: rotate(-45deg);
+    }
+    
+    .open-product-img{
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 1rem;
+    }
+
+    .open-product-name{
+        font-size: 1.1rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    
+    .size-cnt{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 15%;
+    }
+    .size-cnt>label{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .size-cnt>select{
+        width: 7rem;
+        height: 2rem;
+    }
+
+    .price-cnt{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15% 2rem 15%;
+    }
+    .price-cnt>span{
+        font-size: 1.3rem;
+    }
+    .price-cnt>div{
+        width: 8rem;
+        height: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 300%;
+        background-color: #153250;
+        color: white;
+        font-size: .85rem;
+    }
+
+    .open-product-text{
+        color: rgb(95, 95, 95);
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo" style="background: url('../icons/logo.svg'); background-position: center; background-repeat: no-repeat;"></div>
+    </header>
+    <main class="main">
+        
+        
+    </main>
+    <section class="open-product-container">
+        <div class="close-button"></div>
+        <div class="open-product-img" ></div>
+        <span class="open-product-name">Adawdawdawdawdaw</span>
+        <div class="size-cnt">
+            <label for="size">size:</label>
+            <select name="size" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                
+            </select>
+        </div>
+        <div class="price-cnt">
+            <span class="open-product-price">112zl</span>
+            <div class="add-to-cart">ADD TO CART</div>
+        </div>
+        <span class="open-product-text">
+            KnowledgeCotton Apparel quilted fish-bone
+            structured zip sweatshirt is crafted from
+            mid-weight fleece. Featuring zip closure at the
+            front and ribbing at neck, sleeve and bottom
+            hem. <br> <br>
+            (Organic cotton)
+            Impact compared to conventional or generic
+            fiber:
+            91 % less water use
+            61 % less energy use
+            46 % less carbon dioxide <br> <br>
+            (Recycled polyester)
+        </span>
+    </section>
+    <section class="menu-list">
+        <a href="../index.html"><div class="menu-item" style="background-image: url('../icons/domek.svg');"></div></a>
+        <div class="menu-item" style="background-image: url('../icons/lupka.svg');"></div>
+        <div class="menu-item menu-opener" style="background-image: url('../icons/sowa.svg'); top: 5px;  height: 77%;"><span>menu</span></div>
+        <div class="menu-item menu-closer"></div>
+        <div class="menu-item" style="background-image: url('../icons/human.svg');"></div>
+        <div class="menu-item" style="background-image: url('../icons/koszyk.svg'); "></div>
+    </section>
+    <menu class="menu-container close">
+        <ul>
+            <a href="./index.html"><li>store</li></a>
+            <a href="../videos/index.html"><li>videos</li></a>
+            <a href="../events/index.html"><li>upcoming events</li></a>
+            <a href="../goals/index.html"><li>achieving our goals</li></a>
+            <a href="../contact/index.html"><li>contact</li></a>
+        </ul>
+    </menu>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        let mainCnt = document.querySelector('main');
+        
+        function createAndLoadProd(){
+            for(let i=1; i<=8; i++){
+                let productCnt = document.createElement('section');
+                productCnt.classList.add('product-container')
+                productCnt.setAttribute('prod-img-nr', i) 
+                
+                let productImg = document.createElement('div');
+                productImg.classList.add('product-img')
+                productImg.style.backgroundImage = `url("./products/${i}.png")`
+
+                let productText = document.createElement('span');
+                let productPrice = document.createElement('span');
+                switch(i){
+                    case 1:
+                        productText.innerText = 'ELM quilted cardigan';
+                        productPrice.innerText = '€ 119,95';
+                        break
+                    case 2:
+                        productText.innerText = 'Arctic Canvas short parka jacket';
+                        productPrice.innerText = '€ 339,95';
+                        break
+                    case 3:
+                        productText.innerText = 'ALDER heavy tee sunshine';
+                        productPrice.innerText = '€ 44,95';
+                        break
+                    case 4:
+                        productText.innerText = 'ALDER o-neck tee printed';
+                        productPrice.innerText = '€ 23,95';
+                        break
+                    case 5:
+                        productText.innerText = 'Save water anorak';
+                        productPrice.innerText = '€ 332,95';
+                        break
+                    case 6:
+                        productText.innerText = 'Eco Active thermore Jacket';
+                        productPrice.innerText = '€ 198,95';
+                        break
+                    case 7:
+                        productText.innerText = 'Eco shoulders Jacket';
+                        productPrice.innerText = '€ 99,95';
+                         break
+                    case 8:
+                        productText.innerText = 'Wool is cool';
+                        productPrice.innerText = '€ 125,95';
+                        break
+                    
+                }
+                
+                productCnt.appendChild(productImg)
+                productCnt.appendChild(productText)
+                productCnt.appendChild(productPrice)
+
+                mainCnt.appendChild(productCnt);
+            }
+        }
+
+        createAndLoadProd()
+
+
+        let allProducts = document.querySelectorAll('.product-container');
+        console.log(allProducts)
+
+        allProducts.forEach(prod => {
+            prod.addEventListener('click', ev=>{
+                window.scrollTo(0, 0)
+                console.log(prod.getAttribute('prod-img-nr'))
+                openProductOnNr(prod.getAttribute('prod-img-nr'));
+            })
+        })
+
+        let closeOpenProdBtn = document.querySelector('.close-button');
+
+        closeOpenProdBtn.addEventListener('click', ev=>{
+            document.querySelector('.open-product-container').style.display = 'none';
+            document.querySelector('.main').style.display = 'flex';
+        })
+
+        function openProductOnNr(index){
+            document.querySelector('.main').style.display = 'none';
+            document.querySelector('.open-product-container').style.display = 'flex';
+            let openProdImg = document.querySelector('.open-product-img');
+            openProdImg.style.backgroundImage = `url('./products/${index}.png')`;
+            let openProdName = document.querySelector('.open-product-name');
+            let openProdPrice = document.querySelector('.open-product-price');
+
+            if(index == 1){
+                openProdName.innerText = 'ELM quilted cardigan';
+                openProdPrice.innerText = '€ 119,95';
+            }
+            else if(index == 2){
+                openProdName.innerText = 'Arctic Canvas short parka jacket';
+                openProdPrice.innerText = '€ 339,95';
+            }
+            else if(index == 3){
+                openProdName.innerText = 'ALDER heavy tee sunshine';
+                openProdPrice.innerText = '€ 44,95';
+            }
+            else if(index == 4){
+                openProdName.innerText = 'ALDER o-neck tee printed';
+                openProdPrice.innerText = '€ 23,95';
+            }
+            else if(index == 5){
+                openProdName.innerText = 'Save water anorak';
+                openProdPrice.innerText = '€ 332,95';
+            }
+            else if(index == 6){
+                openProdName.innerText = 'Eco Active thermore Jacket';
+                openProdPrice.innerText = '€ 198,95';
+            }
+            else if(index == 7){
+                openProdName.innerText = 'Eco shoulders Jacket';
+                openProdPrice.innerText = '€ 99,95';
+            }
+            else if(index == 8){
+                openProdName.innerText = 'Wool is cool';
+                openProdPrice.innerText = '€ 125,95';
+            }
+        }
+    </script>
+</body>
+</html>

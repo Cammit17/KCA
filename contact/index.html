@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Cotton</title>
+    <link rel="shortcut icon" href="../icons/sowa.svg" type="image/x-icon"> 
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    main{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+    main>h1{
+        margin: 1.5rem 0 0 0;
+        text-align: center;
+    }
+    
+    .owl{
+        margin-left: 25%;
+        width: 50%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .address{
+        width: 100%;
+        display: inline-block;
+        padding-left: 2rem;
+        font-size: 1.3rem;
+    }
+    .select-store{
+        width: auto;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .store{
+        width: 60%;
+        height: 2.6rem;
+        margin-top: 1rem;
+        display: flex;
+        padding-left: .5rem;
+        border-radius: 5px;
+        background-color:  #153250;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 2px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+</style>
+<body>
+    <header>
+        <div class="logo" style="background: url('../icons/logo.svg'); background-position: center; background-repeat: no-repeat;"></div>
+    </header>
+    <main class="main">
+        <h1>Contact</h1>
+        <div class="owl" style="background-image: url('../icons/sowa.svg');"></div>
+        <span class="address">
+            <p style="font-weight: 500; font-size: 1.5rem;">address</p>
+            KnowledgeCotton Apparel <br>
+            Orebygårdvej 11 <br>
+            7400 Herning <br>
+            Denmark <br>
+            VAT nr. 28115164 <br>
+            0045 70209031 <br>
+        </span>
+        <section class="select-store">
+            <span style="font-weight: 500; margin: 2rem 0 .7rem 0; font-size: 1.5rem;">Select store</span>
+            <div class="store"> <span>Paris</span> </div>
+            <div class="store"> <span>Vienna</span> </div>
+            <div class="store">  <span>Copenhagen</span> </div>
+            <div class="store"> <span>Oslo</span> </div>
+            <div class="store"> <span>Berlin</span> </div>
+        </section>
+    </main>
+    
+    <section class="menu-list">
+        <a href="../index.html"><div class="menu-item" style="background-image: url('../icons/domek.svg');"></div></a>
+        <div class="menu-item" style="background-image: url('../icons/lupka.svg');"></div>
+        <div class="menu-item menu-opener" style="background-image: url('../icons/sowa.svg'); top: 5px;  height: 77%;"><span>menu</span></div>
+        <div class="menu-item menu-closer"></div>
+        <div class="menu-item" style="background-image: url('../icons/human.svg');"></div>
+        <div class="menu-item" style="background-image: url('../icons/koszyk.svg'); "></div>
+    </section>
+    <menu class="menu-container close">
+        <ul>
+            <a href="../store/index.html"><li>store</li></a>
+            <a href="../videos/index.html"><li>videos</li></a>
+            <a href="../events/index.html"><li>upcoming events</li></a>
+            <a href="../goals/index.html"><li>achieving our goals</li></a>
+            <a href="./index.html"><li>contact</li></a>
+        </ul>
+    </menu>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="../script.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
